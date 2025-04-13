@@ -5,7 +5,13 @@
     border-radius: 50%;
     width: 130px;
     height: 130px;
-    animation: spin 4s linear infinite;
+    animation: spin 0.1s linear infinite;
+}
+.parent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes spin {
