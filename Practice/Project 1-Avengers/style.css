@@ -97,7 +97,7 @@ body {
 .sidebar h2 {
     position: relative;
     left: 35px;
-    top: -4px;
+    top: 10px;
     text-align: center;
 }
 
@@ -131,12 +131,18 @@ body {
     left: 25px;
     z-index: 2;
     cursor: pointer;
+    transition: left 0.3s linear;
 }
 
 .toggle img {
     height: 25px;
     color: white;
 }
-#check{
+
+#check {
     display: none;
+}
+
+#check:checked~.toggle {
+    left: 130px;
 }
