@@ -74,6 +74,8 @@ body {
     height: 120vh;
     background-color: #169976;
     width: 15%;
+    left: -300px;
+    transition: all 0.3s linear;
     z-index: 1;
 }
 
@@ -94,7 +96,7 @@ body {
 
 .sidebar h2 {
     position: relative;
-    left: 45px;
+    left: 35px;
     top: -4px;
     text-align: center;
 }
@@ -111,10 +113,30 @@ body {
     box-shadow: 0 0 10px rgb(40, 33, 33);
     border: 2px solid whitesmoke(213, 199, 199);
     border-radius: 5px;
-    font-size: 23px;
+    font-size: 22px;
     color: white;
 }
 
 .sidebar .sidebar-links ul {
     padding: 0;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+.toggle {
+    position: fixed;
+    top: 30px;
+    left: 25px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.toggle img {
+    height: 25px;
+    color: white;
+}
+#check{
+    display: none;
 }
